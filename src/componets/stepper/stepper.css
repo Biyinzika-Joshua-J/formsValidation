@@ -1,0 +1,44 @@
+.completed{
+    background-color: black !important;
+}
+
+.StepButton-d2-1-2-8.active{
+    background-color: green !important;
+}
+
+.StepButton-d6-1-2-18.active{
+    background-color: green !important;
+}
+
+.StepButton-d10-1-2-32.active{
+    background-color: green !important;
+}
+
+.StepButton-d14-1-2-46.active{
+    background-color: green !important;
+}
+
+.StepButton-d18-1-2-60.active{
+    background-color: green !important;
+}
+
+.StepButton-d22-1-2-74.active{
+    background-color: green !important;
+}
+
+.StepButton-d26-1-2-88.active{
+    background-color: green !important;
+}
+
+.StepButton-d30-1-2-102.active{
+    background-color: green !important;
+}
+
+.StepButton-d34-1-2-116.active{
+    background-color: green !important;
+}
+
+#RFS-StepButton{
+    background-color: none !important;
+}
+
