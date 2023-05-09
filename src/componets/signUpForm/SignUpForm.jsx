@@ -18,12 +18,10 @@ const SignUpForm = () => {
   const activeStep = useSelector(state => state.step.activeStep);
   const isCookiePopUpOpen = useSelector(state => state.cookiePopUp.open);
 
-  console.log('cookie is open '+ isCookiePopUpOpen )
-
   return (
     <Box>
         <Box sx={{textAlign:'center', width:'100%', fontFamily:'Verdana'}}>
-           {(false===false) && typers[activeStep]}
+           {(isCookiePopUpOpen===false) && typers[activeStep]}
         </Box>
         <Box sx={{ }}>
           <FormStepper/>

@@ -1,0 +1,15 @@
+.scannerPage{
+    box-shadow: 7px 5px 27px 0px rgba(0,0,0,0.34);
+    -webkit-box-shadow: 7px 5px 27px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 7px 5px 27px 0px rgba(0,0,0,0.34);
+padding: 3rem 4rem;
+margin: 3rem 0;
+}
+
+
+@media (max-width: 500px){
+    .scannerPage{
+        padding: 1rem 2rem 3rem 2rem;
+        
+    }
+}

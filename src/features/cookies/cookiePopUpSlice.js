@@ -12,7 +12,7 @@ export const cookiePopUpSlice = createSlice({
       state.open = true;
     },
     close: (state) => {
-      state.close = false;
+      state.open = false;
     },
   },
 })

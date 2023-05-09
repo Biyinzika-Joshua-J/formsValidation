@@ -12,6 +12,8 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import isEmailValid from "../../utilities/emailValidator";
 import { useNavigate } from "react-router-dom";
+import { setCookies } from "../../utilities/setCookies";
+
 import './form.css';
 
 const validationSchema = yup
@@ -82,8 +84,8 @@ const Form = () => {
     let isValid = isPhoneValid(telephone);
     isValid ? setPhoneValid(true) : setPhoneValid(false);
     console.log(data);
+    setCookies(); // sets cookies after user submits form
     navigate('/scanner');
-
   };
 
   function nextHandler() {
@@ -173,7 +175,7 @@ const Form = () => {
   }
 
 
-
+console.log(errors)
   return (
     <Box>
       <FormProvider {...methods}>
@@ -227,12 +229,15 @@ const Form = () => {
                   type="checkbox"
                   name="selectCheckbox"
                   id="selectCheckbox"
-                  onChange={()=>onCheckBoxHandler()}
+                  
                   {...register('agree_to_terms_and_conditions')}
                   className={`form-check-input ${errors.agree_to_terms_and_conditions ? 'is-invalid' : ''
                     }`}
-                  checked={userAgreedToTermsAndConditions}
+                    
                 />
+
+               
+                
               </Box>
               <Box>
                 I agree to the <a href="#" style={{ color: 'orange' }}>Terms and Conditions</a> & <a href="#" color="orange" style={{ color: 'orange' }}>Privacy Policy</a>
